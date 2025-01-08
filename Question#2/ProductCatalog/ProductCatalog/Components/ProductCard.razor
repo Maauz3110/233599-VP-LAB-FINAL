@@ -1,0 +1,19 @@
+﻿@namespace ProductCatalog.Components
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">@Name</h5>
+        <h6 class="card-subtitle mb-2 text-muted">@Category</h6>
+        <p class="card-text">Price: @Price</p>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Name { get; set; }
+
+    [Parameter]
+    public string Category { get; set; }
+
+    [Parameter]
+    public decimal Price { get; set; }
+}

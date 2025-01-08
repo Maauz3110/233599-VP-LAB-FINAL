@@ -1,0 +1,12 @@
+﻿@namespace ProductCatalog.Models
+<div>
+    @foreach (var product in Products)
+    {
+        <ProductCard Name="@product.Name" Category="@product.Category" Price="@product.Price" />
+    }
+</div>
+
+@code {
+    [Parameter]
+    public List<Product> Products { get; set; } = new List<Product>();
+}

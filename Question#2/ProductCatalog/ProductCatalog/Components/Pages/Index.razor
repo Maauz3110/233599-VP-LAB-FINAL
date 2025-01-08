@@ -1,0 +1,31 @@
+﻿@page "/"
+@namespace ProductCatalog.Pages
+@using ProductCatalog.Models
+@using ProductCatalog.Components
+
+<h3>Product Catalog</h3>
+
+<ProductList Products="products" />
+
+@code {
+    private List<Product> products = new List<Product>
+    {
+        new Product { Name = "Laptop", Category = "Electronics", Price = 999.99m },
+        new Product { Name = "Headphones", Category = "Accessories", Price = 49.99m },
+        new Product { Name = "Coffee Mug", Category = "Kitchenware", Price = 14.99m },
+        new Product { Name = "Smartphone", Category = "Electronics", Price = 699.99m },
+        new Product { Name = "Notebook", Category = "Stationery", Price = 4.99m },
+        new Product { Name = "Gaming Chair", Category = "Furniture", Price = 299.99m },
+        new Product { Name = "Backpack", Category = "Accessories", Price = 39.99m },
+        new Product { Name = "Blender", Category = "Kitchenware", Price = 89.99m },
+        new Product { Name = "Table Lamp", Category = "Home Decor", Price = 24.99m },
+        new Product { Name = "Wristwatch", Category = "Fashion", Price = 199.99m },
+        new Product { Name = "Bluetooth Speaker", Category = "Electronics", Price = 129.99m },
+        new Product { Name = "Yoga Mat", Category = "Fitness", Price = 19.99m },
+        new Product { Name = "Water Bottle", Category = "Fitness", Price = 9.99m },
+        new Product { Name = "LED Monitor", Category = "Electronics", Price = 249.99m },
+        new Product { Name = "Sunglasses", Category = "Fashion", Price = 49.99m },
+        new Product { Name = "Wall Clock", Category = "Home Decor", Price = 34.99m },
+        new Product { Name = "Microwave", Category = "Kitchenware", Price = 199.99m },
+    };
+}
